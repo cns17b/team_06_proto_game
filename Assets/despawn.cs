@@ -16,11 +16,5 @@ public class despawn : MonoBehaviour
         
     }
 
-    void TriggerDespawn(Collision other)
-    {
-        if(other.gameObject.tag == "Meteor")
-        {
-            Destroy(gameObject);
-        }
-    }
+  
 }

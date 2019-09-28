@@ -19,5 +19,16 @@ public class meteormove : MonoBehaviour
         rb.velocity = new Vector2(speed * Time.deltaTime, rb.velocity.y);
         rb.transform.Rotate(0, 0, 100 * Time.deltaTime);
     }
+
+    //Destroy Meteor at despawn collider
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        if (col.gameObject.tag == "Despawn")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
+
    

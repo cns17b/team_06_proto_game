@@ -24,8 +24,8 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnDelay = 3;
-        spawnTimer = 3;
+        spawnDelay = 2;
+        spawnTimer = 2;
         Ymin = -12;
         Ymax = 18;
         
