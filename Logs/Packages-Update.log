@@ -28,3 +28,18 @@ The following packages were added:
   com.unity.ads@2.0.8
   com.unity.multiplayer-hlapi@1.0.2
   com.unity.xr.legacyinputhelpers@2.0.2
+
+=== Mon Sep 30 14:57:56 2019
+
+Packages were changed.
+Update Mode: resetToDefaultDependencies
+
+The following packages were added:
+  com.unity.timeline@1.1.0
+  com.unity.ugui@1.0.0
+The following packages were removed:
+  com.unity.ads@2.0.8
+  com.unity.analytics@3.3.2
+  com.unity.multiplayer-hlapi@1.0.2
+  com.unity.purchasing@2.0.6
+  com.unity.xr.legacyinputhelpers@2.0.2
