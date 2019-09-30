@@ -6,6 +6,7 @@ public class meteormove : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,11 @@ public class meteormove : MonoBehaviour
     {
 
         if (col.gameObject.tag == "Despawn")
+        {
+            Destroy(this.gameObject);
+        }
+
+        if(col.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
         }
