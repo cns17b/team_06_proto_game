@@ -52,7 +52,7 @@ public class spawner : MonoBehaviour
         for (int i = 0; i < spawnNum; i++)
         {
             //Determine meteor's Y position (X position is fixed at 40 for each spawn)
-            Vector2 position = new Vector2(Random.Range(30,50), Random.Range(Ymin, Ymax));
+            Vector2 position = new Vector2(Random.Range(50,70), Random.Range(Ymin, Ymax));
             //Determine which meteor to spawn
             spawnWhich = Random.Range(1, 4);
             if(spawnWhich == 1)
