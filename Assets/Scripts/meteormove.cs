@@ -6,6 +6,7 @@ public class meteormove : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
+    private Animator anim;
  
     // Start is called before the first frame update
     void Start()
@@ -27,15 +28,21 @@ public class meteormove : MonoBehaviour
 
         if (col.gameObject.tag == "Despawn")
         {
+            Debug.Log("true");
+            anim.SetBool("isCrashed", true);
             Destroy(this.gameObject);
         }
 
         if(col.gameObject.tag == "Player")
         {
+            Debug.Log("true");
+            anim.SetBool("isCrashed", true);
             Destroy(this.gameObject);
         }
         if (col.gameObject.tag == "PlayerProjectile")
         {
+            Debug.Log("true");
+            anim.SetBool("isCrashed", true);
             //Play Explosion
             Destroy(this.gameObject);
         }
