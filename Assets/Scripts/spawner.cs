@@ -8,14 +8,18 @@ public class spawner : MonoBehaviour
     public GameObject meteorOne;
     public GameObject meteorTwo;
     public GameObject meteorThree;
+    public GameObject enemy;
 
     //Determines which meteor spawns
     public int spawnWhich;
     //Determines if one, two, or three meteors spawn
     public int spawnNum;
-    //Timing between spawns
-    public float spawnDelay;
-    public float spawnTimer;
+    //Timing between spawns for meteors
+    public float spawnDelayM;
+    public float spawnTimerM;
+    //Timing between spawns for enemies
+    public float spawnDelayE;
+    public float spawnTimerE;
 
     //Possible Spawning Heights
     public float Ymin;
@@ -24,8 +28,10 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnDelay = 2;
-        spawnTimer = 2;
+        spawnDelayM = 2;
+        spawnTimerM = 2;
+        spawnDelayE = 5;
+        spawnTimerE = 5;
         Ymin = -12;
         Ymax = 15;
         
@@ -35,13 +41,25 @@ public class spawner : MonoBehaviour
     void Update()
     {
         //Update time between spawns
-        spawnTimer = spawnTimer - Time.deltaTime;
-        if (spawnTimer <= 0)
+        spawnTimerM = spawnTimerM - Time.deltaTime;
+
+        if (spawnTimerM <= 0)
         {
             //Spawn
             spawnMeteor();
             //Reset spawn delay
-            spawnTimer = spawnDelay;
+            spawnTimerM = spawnDelayM;
+        }
+
+        //Update time between spawns
+        spawnTimerE = spawnTimerE - Time.deltaTime;
+
+        if (spawnTimerE <= 0)
+        {
+            //Spawn
+            spawnEnemy();
+            //Reset spawn delay
+            spawnTimerE = spawnDelayE;
         }
     }
 
@@ -51,7 +69,7 @@ public class spawner : MonoBehaviour
         spawnNum = Random.Range(1, 6);
         for (int i = 0; i < spawnNum; i++)
         {
-            //Determine meteor's Y position (X position is fixed at 40 for each spawn)
+            //Determine meteor's Y position 
             Vector2 position = new Vector2(Random.Range(50,70), Random.Range(Ymin, Ymax));
             //Determine which meteor to spawn
             spawnWhich = Random.Range(1, 4);
@@ -69,5 +87,11 @@ public class spawner : MonoBehaviour
             }
 
         }
+    }
+    void spawnEnemy()
+    {
+        //Determine Enemie's Y position 
+        Vector2 position = new Vector2(64, Random.Range(Ymin, Ymax));
+        Instantiate(enemy, position, transform.rotation);
     }
 }

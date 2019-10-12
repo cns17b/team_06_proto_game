@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5360269239509428047}
   - component: {fileID: 5360269239509428044}
   - component: {fileID: 5360269239509428040}
+  - component: {fileID: 8739327260147078045}
   m_Layer: 0
   m_Name: Meteor_One
   m_TagString: Meteor
@@ -133,3 +134,22 @@ CircleCollider2D:
   m_Offset: {x: 0.000030517578, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!95 &8739327260147078045
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360269239509428019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6348ec47843f9584db0dc013d74760ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

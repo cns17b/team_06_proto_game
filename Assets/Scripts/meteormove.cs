@@ -34,6 +34,11 @@ public class meteormove : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (col.gameObject.tag == "PlayerProjectile")
+        {
+            //Play Explosion
+            Destroy(this.gameObject);
+        }
     }
 }
 

@@ -1,12 +1,36 @@
 fileFormatVersion: 2
 guid: f7240818ec3b2794ebb707f5d7375db3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8945922799486939902
+    second: spritesheetblackhole_0
+  - first:
+      213: 3971347501916737931
+    second: spritesheetblackhole_1
+  - first:
+      213: -1580130932988836867
+    second: spritesheetblackhole_2
+  - first:
+      213: 4642717393997826138
+    second: spritesheetblackhole_3
+  - first:
+      213: 319809394599184010
+    second: spritesheetblackhole_4
+  - first:
+      213: -3340925379635958276
+    second: spritesheetblackhole_5
+  - first:
+      213: -3854275500380147624
+    second: spritesheetblackhole_6
+  - first:
+      213: -787246669775405969
+    second: spritesheetblackhole_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +58,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +73,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -70,13 +94,193 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheetblackhole_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 180
+        width: 839
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fac73252b175364b9652d5aae3436ea
+      internalID: -8945922799486939902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_1
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 141
+        width: 777
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13260b9d8912f84d8fa2722a87d9653
+      internalID: 3971347501916737931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_2
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 129
+        width: 829
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07851b37061eaa43b07c683af23cee1
+      internalID: -1580130932988836867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_3
+      rect:
+        serializedVersion: 2
+        x: 2938
+        y: 180
+        width: 828
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca83ed573a6053438c642416d4c8dec
+      internalID: 4642717393997826138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_4
+      rect:
+        serializedVersion: 2
+        x: 3877
+        y: 155
+        width: 840
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf893d35f978f28438791d21d4a1d5cb
+      internalID: 319809394599184010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_5
+      rect:
+        serializedVersion: 2
+        x: 4863
+        y: 172
+        width: 781
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b218e562255865049a2e69a6952b72c6
+      internalID: -3340925379635958276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_6
+      rect:
+        serializedVersion: 2
+        x: 5879
+        y: 188
+        width: 828
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd795b66073c6fa4f9726a156ee221c4
+      internalID: -3854275500380147624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetblackhole_7
+      rect:
+        serializedVersion: 2
+        x: 6992
+        y: 231
+        width: 832
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399a8407a30ef3e4193e6704ae017aa0
+      internalID: -787246669775405969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7940e0ab61f30f3499888169aa371178
     internalID: 0
     vertices: []
     indices: 
