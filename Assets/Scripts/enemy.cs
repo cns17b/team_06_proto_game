@@ -43,6 +43,7 @@ public class enemy : MonoBehaviour
         if (col.gameObject.tag == "PlayerProjectile")
         {
             speed = -2400f;
+            shootTimer = 500;
         }
         if (col.gameObject.tag == "Despawn")
         {

@@ -27,18 +27,22 @@ public class meteormove : MonoBehaviour
 
         if (col.gameObject.tag == "Despawn")
         {
-            Destroy(this.gameObject);
+            end();
         }
 
         if(col.gameObject.tag == "Player")
         {
-            Destroy(this.gameObject);
+            end();
         }
         if (col.gameObject.tag == "PlayerProjectile")
         {
+            speed = 0;
             //Play Explosion
-            Destroy(this.gameObject);
         }
+    }
+    void end()
+    {
+        Destroy(this.gameObject);
     }
 }
 

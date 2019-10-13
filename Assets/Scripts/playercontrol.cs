@@ -31,7 +31,7 @@ public class playercontrol : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, speed * move);
         if (health == 0)
         {
-            endgame();
+            //PLAY DEATH ANIMATION
         }
         //Fire Projectile is Space is pressed
         if (Input.GetKeyDown(KeyCode.Space))
