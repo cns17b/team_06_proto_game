@@ -9,6 +9,8 @@ public class playercontrol : MonoBehaviour
     public int health;
     Rigidbody2D rb;
     AudioSource audioData;
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +29,14 @@ public class playercontrol : MonoBehaviour
     private void FixedUpdate()
     {
         //Play Idle animation, and moving animation if moving
+        
+
         float move = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(rb.velocity.x, speed * move);
+        if (move > 1)
+        {
+            anim.SetBool("isMoving", true);
+        }
         if (health == 0)
         {
             //PLAY DEATH ANIMATION

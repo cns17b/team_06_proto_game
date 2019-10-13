@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &114739260 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1450601793950358918, guid: 89e089ffc4eea4d4c923892a69363114,
+    type: 3}
+  m_PrefabInstance: {fileID: 2813132434487855255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &308291984 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8715336342998130542, guid: 89e089ffc4eea4d4c923892a69363114,
+    type: 3}
+  m_PrefabInstance: {fileID: 2813132434487855255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +491,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ecdb3b6c194cb9438f4f09f40da10eb, type: 3}
+--- !u!95 &1238309043 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2423363690064718604, guid: 89e089ffc4eea4d4c923892a69363114,
+    type: 3}
+  m_PrefabInstance: {fileID: 2813132434487855255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &754875270873507879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,6 +743,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2813132432929389004, guid: 89e089ffc4eea4d4c923892a69363114,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 308291984}
+    - target: {fileID: 2813132433828929184, guid: 89e089ffc4eea4d4c923892a69363114,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1238309043}
+    - target: {fileID: 2813132434817247575, guid: 89e089ffc4eea4d4c923892a69363114,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 114739260}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e089ffc4eea4d4c923892a69363114, type: 3}
 --- !u!1001 &6033282044867277124
