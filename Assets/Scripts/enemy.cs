@@ -10,10 +10,12 @@ public class enemy : MonoBehaviour
     //Time between shots
     public float shootDelay;
     public float shootTimer;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         shootDelay = 3;
         shootTimer = 1;
         speed = 0f;
@@ -34,6 +36,11 @@ public class enemy : MonoBehaviour
             //Play shooting animation
             Instantiate(EnemyProjectile, transform.position, transform.rotation);
             shootTimer = shootDelay;
+            anim.SetBool("NotShooting", true);
+        }
+           else
+        {
+            anim.SetBool("NotShooting", false);
         }
     }
 
