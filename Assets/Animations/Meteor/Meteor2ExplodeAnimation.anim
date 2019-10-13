@@ -19,8 +19,10 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0.05
+    - time: 0
       value: {fileID: 21300000, guid: 4c6680c5e9e7470449ba1d73d5c13fa2, type: 3}
+    - time: 0.05
+      value: {fileID: 21300000, guid: bb3eb3ad549225c4aab69c62f066f1a7, type: 3}
     - time: 0.1
       value: {fileID: 21300000, guid: e061e18c55a77a74d99d4a95b0cba303, type: 3}
     - time: 0.15
@@ -59,6 +61,7 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 4c6680c5e9e7470449ba1d73d5c13fa2, type: 3}
+    - {fileID: 21300000, guid: bb3eb3ad549225c4aab69c62f066f1a7, type: 3}
     - {fileID: 21300000, guid: e061e18c55a77a74d99d4a95b0cba303, type: 3}
     - {fileID: 21300000, guid: be3de709c3837134086e43003117e589, type: 3}
     - {fileID: 21300000, guid: b158626808aa11c448dc418707fa4053, type: 3}
@@ -73,12 +76,12 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.55
+    m_StopTime: 0.65
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -93,7 +96,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.55
+  - time: 0.65
     functionName: end
     data: 
     objectReferenceParameter: {fileID: 0}
