@@ -9,7 +9,7 @@ public class playercontrol : MonoBehaviour
     public int health;
     Rigidbody2D rb;
     AudioSource audioData;
-    private Animator anim;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -18,24 +18,39 @@ public class playercontrol : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         audioData = GetComponent<AudioSource>();
         speed = 30f;
+
+        anim.SetBool("isMoving", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void FixedUpdate()
     {
         //Play Idle animation, and moving animation if moving
-        
+
 
         float move = Input.GetAxis("Vertical");
-        rb.velocity = new Vector2(rb.velocity.x, speed * move);
-        if (move > 1)
+
+        if (move > 0)
         {
+            Debug.Log("pos");
+            rb.velocity = new Vector2(rb.velocity.x, speed * move);
             anim.SetBool("isMoving", true);
+        }
+        else if (move < 0)
+        {
+            Debug.Log("neg");
+            rb.velocity = new Vector2(rb.velocity.x, speed * move);
+            anim.SetBool("isMoving", true);
+        }
+        else if (move == 0)
+        {
+            anim.SetBool("isMoving", false);
+
         }
         if (health == 0)
         {
