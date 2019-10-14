@@ -68,11 +68,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2813132434436849405}
     m_Modifications:
-    - target: {fileID: 1354113845158859314, guid: e3a645c92fd541b4bbc241c3cee37ee8,
-        type: 3}
-      propertyPath: m_Name
-      value: Meteor_Two
-      objectReference: {fileID: 0}
     - target: {fileID: 1354113845158859326, guid: e3a645c92fd541b4bbc241c3cee37ee8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -127,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354113845158859314, guid: e3a645c92fd541b4bbc241c3cee37ee8,
+        type: 3}
+      propertyPath: m_Name
+      value: Meteor_Two
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3a645c92fd541b4bbc241c3cee37ee8, type: 3}
@@ -203,22 +203,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5360269239509428044, guid: 3b021702ff2f9da40bfa4e9048478d01,
-        type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 1450601793950358918}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b021702ff2f9da40bfa4e9048478d01, type: 3}
 --- !u!4 &2813132434817247573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5360269239509428046, guid: 3b021702ff2f9da40bfa4e9048478d01,
-    type: 3}
-  m_PrefabInstance: {fileID: 7884045319300763163}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1450601793950358918 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8739327260147078045, guid: 3b021702ff2f9da40bfa4e9048478d01,
     type: 3}
   m_PrefabInstance: {fileID: 7884045319300763163}
   m_PrefabAsset: {fileID: 0}
@@ -229,11 +218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2813132434436849405}
     m_Modifications:
-    - target: {fileID: 6015040042589466604, guid: 74776504435e4c84e9a5efecaf332edc,
-        type: 3}
-      propertyPath: m_Name
-      value: Meteor_Three
-      objectReference: {fileID: 0}
     - target: {fileID: 6015040042589466600, guid: 74776504435e4c84e9a5efecaf332edc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -288,6 +272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015040042589466604, guid: 74776504435e4c84e9a5efecaf332edc,
+        type: 3}
+      propertyPath: m_Name
+      value: Meteor_Three
       objectReference: {fileID: 0}
     - target: {fileID: 6015040042589466605, guid: 74776504435e4c84e9a5efecaf332edc,
         type: 3}

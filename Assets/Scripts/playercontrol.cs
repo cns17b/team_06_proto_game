@@ -54,13 +54,13 @@ public class playercontrol : MonoBehaviour
         }
         if (health == 0)
         {
-            //PLAY DEATH ANIMATION
+            anim.SetBool("Dead", true);
         }
         //Fire Projectile is Space is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Play Shooting Animation
-            Instantiate(PlayerProjectile, transform.position, transform.rotation);
+            anim.SetTrigger("shoot");
+            shoot();
         }
     }
 
@@ -87,6 +87,10 @@ public class playercontrol : MonoBehaviour
         }
 
 
+    }
+    void shoot()
+    {
+        Instantiate(PlayerProjectile, transform.position, transform.rotation);
     }
     void endgame()
     {
