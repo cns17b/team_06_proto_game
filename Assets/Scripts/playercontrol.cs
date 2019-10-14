@@ -6,18 +6,23 @@ public class playercontrol : MonoBehaviour
 {
     public GameObject PlayerProjectile;
     public float speed;
-    public int health;
+    public float invincibletimer;
+    public int hit;
     Rigidbody2D rb;
     AudioSource audioData;
     public Animator anim;
+    public GameObject health1;
+    public GameObject health2;
+    public GameObject health3;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 3;
+        hit = 0;
         rb = GetComponent<Rigidbody2D>();
         audioData = GetComponent<AudioSource>();
         speed = 30f;
+        invincibletimer = 0;
 
         anim.SetBool("isMoving", false);
     }
@@ -31,7 +36,7 @@ public class playercontrol : MonoBehaviour
     private void FixedUpdate()
     {
         //Play Idle animation, and moving animation if moving
-
+        invincibletimer = invincibletimer - Time.deltaTime;
 
         float move = Input.GetAxis("Vertical");
 
@@ -52,7 +57,7 @@ public class playercontrol : MonoBehaviour
             anim.SetBool("isMoving", false);
 
         }
-        if (health == 0)
+        if (hit == 3)
         {
             anim.SetBool("Dead", true);
         }
@@ -66,26 +71,43 @@ public class playercontrol : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        //Play hit sound and hit animation
-        if (col.gameObject.tag == "Meteor")
+        if (invincibletimer <= 0)
         {
-            //Play Heath Loss animation (UI)
-            health = health - 1;
-            audioData.Play(0);
+            //Play hit sound and hit animation
+            if (col.gameObject.tag == "Meteor")
+            {
+                //Play Heath Loss animation (UI)
+                hit = hit + 1;
+                invincibletimer = 3;
+                audioData.Play(0);
+            }
+            if (col.gameObject.tag == "Enemy")
+            {
+                //Play Heath Loss animation (UI)
+                hit = hit + 1;
+                invincibletimer = 3;
+                audioData.Play(0);
+            }
+            if (col.gameObject.tag == "EnemyProjectile")
+            {
+                //Play Heath Loss animation (UI)
+                hit = hit + 1;
+                invincibletimer = 3;
+                audioData.Play(0);
+            }
         }
-        if (col.gameObject.tag == "Enemy")
+        if (hit == 1)
         {
-            //Play Heath Loss animation (UI)
-            health = health - 1;
-            audioData.Play(0);
+            Destroy(health1);
         }
-        if (col.gameObject.tag == "EnemyProjectile")
+        if (hit == 2)
         {
-            //Play Heath Loss animation (UI)
-            health = health - 1;
-            audioData.Play(0);
+            Destroy(health2);
         }
-
+        if (hit == 3)
+        {
+            Destroy(health3);
+        }
 
     }
     void shoot()
