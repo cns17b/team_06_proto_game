@@ -30,8 +30,8 @@ public class spawner : MonoBehaviour
     {
         spawnDelayM = 2;
         spawnTimerM = 2;
-        spawnDelayE = 5;
-        spawnTimerE = 5;
+        spawnDelayE = 8;
+        spawnTimerE = 8;
         Ymin = -12;
         Ymax = 15;
         

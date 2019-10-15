@@ -42,13 +42,13 @@ public class playercontrol : MonoBehaviour
 
         if (move > 0)
         {
-            Debug.Log("pos");
+            //Debug.Log("pos");
             rb.velocity = new Vector2(rb.velocity.x, speed * move);
             anim.SetBool("isMoving", true);
         }
         else if (move < 0)
         {
-            Debug.Log("neg");
+            //Debug.Log("neg");
             rb.velocity = new Vector2(rb.velocity.x, speed * move);
             anim.SetBool("isMoving", true);
         }
@@ -59,8 +59,13 @@ public class playercontrol : MonoBehaviour
         }
         if (hit == 3)
         {
+            rb.velocity = new Vector2(-5, rb.velocity.y);
             anim.SetBool("Dead", true);
-        }
+            if (invincibletimer <= 0)
+            {
+                endgame();
+            }
+        } 
         //Fire Projectile is Space is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -116,9 +121,10 @@ public class playercontrol : MonoBehaviour
     }
     void endgame()
     {
-        //Ends game when health is zero.  PLAY DEATH ANIMATION
-        Time.timeScale = 0;
-        Destroy(this.gameObject);
+      
+       Time.timeScale = 0;
+       Destroy(this.gameObject);
+       
 
     }
 }

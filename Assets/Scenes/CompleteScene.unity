@@ -671,21 +671,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2502295743723903755, guid: 0fe06ef857f84e244b2b712a85bc9094,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502295743723903755, guid: 0fe06ef857f84e244b2b712a85bc9094,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502295743723903755, guid: 0fe06ef857f84e244b2b712a85bc9094,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2502295743723903754, guid: 0fe06ef857f84e244b2b712a85bc9094,
         type: 3}
       propertyPath: health1
@@ -701,26 +686,6 @@ PrefabInstance:
       propertyPath: health3
       value: 
       objectReference: {fileID: 678864024}
-    - target: {fileID: 1509281000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509281000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509281000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509281000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509281000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fe06ef857f84e244b2b712a85bc9094, type: 3}
 --- !u!1001 &2813132434487855255
@@ -931,6 +896,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1193250076, guid: 67e1ad714bab55548881c1a64fe4f30b, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1893605148}
+    - target: {fileID: 6908326111825009422, guid: 67e1ad714bab55548881c1a64fe4f30b,
+        type: 3}
       propertyPath: countText
       value: 
       objectReference: {fileID: 1893605148}

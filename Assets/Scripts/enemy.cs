@@ -10,37 +10,42 @@ public class enemy : MonoBehaviour
     //Time between shots
     public float shootDelay;
     public float shootTimer;
+    public float movetimer;
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        movetimer = 3;
         anim = GetComponent<Animator>();
         shootDelay = 3;
         shootTimer = 1;
         speed = 0f;
         rb = GetComponent<Rigidbody2D>();
+        anim.SetTrigger("Start");
         //Play the appearing animation that moves the cow onto the screen
+        rb.velocity = new Vector2(-500 * Time.deltaTime, rb.velocity.y);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(speed * Time.deltaTime, rb.velocity.y);
+        movetimer = movetimer - Time.deltaTime;
+        if(movetimer <= 0)
+        {
+            rb.velocity = new Vector2(speed * Time.deltaTime, rb.velocity.y);
+        }
         rb.transform.Rotate(0, 0, (-speed/6) * Time.deltaTime);
         shootTimer = shootTimer - Time.deltaTime;
 
         //Fire Projectile when timer is zero
-        if (shootTimer == 0)
+        if (shootTimer <= 0)
         {
+            shootTimer = shootDelay;
             //Play shooting animation
             Instantiate(EnemyProjectile, transform.position, transform.rotation);
-            shootTimer = shootDelay;
-            anim.SetBool("NotShooting", true);
-        }
-           else
-        {
-            anim.SetBool("NotShooting", false);
+            
+            //anim.SetTrigger("Shoot");
         }
     }
 
@@ -61,4 +66,5 @@ public class enemy : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
 }

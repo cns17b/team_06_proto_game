@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class playerprojectile : MonoBehaviour
 {
+
     Rigidbody2D rb;
     public float speed;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        anim = GetComponent<Animator>();
         speed = 1200f;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -27,7 +29,13 @@ public class playerprojectile : MonoBehaviour
         if (col.gameObject.tag != "Player")
         {
             //PLAY EXPLOSION
-            Destroy(this.gameObject);
+            //Uncomment below line if you want the projectile to be less powerful
+            //speed = 0;
+            anim.SetTrigger("Hit");
         }
+    }
+    void end()
+    {
+        Destroy(this.gameObject);
     }
 }

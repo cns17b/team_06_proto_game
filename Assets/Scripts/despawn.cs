@@ -29,5 +29,11 @@ public class despawn : MonoBehaviour
             countText.text = "Score: " + count.ToString();
         }
 
+        if (col.gameObject.tag == "Enemy")
+        {
+            count = count + 5;
+            countText.text = "Score: " + count.ToString();
+        }
+
     }
 }
