@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6015040042589466605}
   - component: {fileID: 6015040042589466601}
   - component: {fileID: 3337478235961623231}
+  - component: {fileID: 900981874805819727}
   m_Layer: 0
   m_Name: Meteor_Three
   m_TagString: Meteor
@@ -118,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  anim: {fileID: 0}
 --- !u!58 &6015040042589466601
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,3 +152,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 6, y: 4}
   m_Direction: 1
+--- !u!95 &900981874805819727
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6015040042589466604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e6b291920690c345a5118184a0a59b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

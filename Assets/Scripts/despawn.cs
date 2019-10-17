@@ -11,7 +11,8 @@ public class despawn : MonoBehaviour
     void Start()
     {
         count = 0;
-        countText.text = "Score: " +count.ToString();
+        countText.text = "Score: " + count.ToString();
+
     }
 
     // Update is called once per frame
@@ -25,6 +26,12 @@ public class despawn : MonoBehaviour
         if (col.gameObject.tag == "Meteor")
         {
             count = count + 1;
+            countText.text = "Score: " + count.ToString();
+        }
+
+        if (col.gameObject.tag == "Enemy")
+        {
+            count = count + 5;
             countText.text = "Score: " + count.ToString();
         }
 

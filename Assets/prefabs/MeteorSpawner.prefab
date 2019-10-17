@@ -52,10 +52,13 @@ MonoBehaviour:
     type: 3}
   meteorThree: {fileID: 6015040042589466604, guid: 74776504435e4c84e9a5efecaf332edc,
     type: 3}
+  enemy: {fileID: 1081462845540905240, guid: 836c23ae24c7c4148af7a6205b294ba2, type: 3}
   spawnWhich: 0
   spawnNum: 0
-  spawnDelay: 0
-  spawnTimer: 0
+  spawnDelayM: 0
+  spawnTimerM: 0
+  spawnDelayE: 0
+  spawnTimerE: 0
   Ymin: 0
   Ymax: 0
 --- !u!1001 &3873243380890799251
@@ -65,11 +68,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2813132434436849405}
     m_Modifications:
-    - target: {fileID: 1354113845158859314, guid: e3a645c92fd541b4bbc241c3cee37ee8,
-        type: 3}
-      propertyPath: m_Name
-      value: Meteor_Two
-      objectReference: {fileID: 0}
     - target: {fileID: 1354113845158859326, guid: e3a645c92fd541b4bbc241c3cee37ee8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -124,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354113845158859314, guid: e3a645c92fd541b4bbc241c3cee37ee8,
+        type: 3}
+      propertyPath: m_Name
+      value: Meteor_Two
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3a645c92fd541b4bbc241c3cee37ee8, type: 3}
@@ -215,11 +218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2813132434436849405}
     m_Modifications:
-    - target: {fileID: 6015040042589466604, guid: 74776504435e4c84e9a5efecaf332edc,
-        type: 3}
-      propertyPath: m_Name
-      value: Meteor_Three
-      objectReference: {fileID: 0}
     - target: {fileID: 6015040042589466600, guid: 74776504435e4c84e9a5efecaf332edc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,11 +273,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6015040042589466604, guid: 74776504435e4c84e9a5efecaf332edc,
+        type: 3}
+      propertyPath: m_Name
+      value: Meteor_Three
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015040042589466605, guid: 74776504435e4c84e9a5efecaf332edc,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 8715336342998130542}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74776504435e4c84e9a5efecaf332edc, type: 3}
 --- !u!4 &2813132432929389001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6015040042589466600, guid: 74776504435e4c84e9a5efecaf332edc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8391321043644012065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8715336342998130542 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 900981874805819727, guid: 74776504435e4c84e9a5efecaf332edc,
     type: 3}
   m_PrefabInstance: {fileID: 8391321043644012065}
   m_PrefabAsset: {fileID: 0}

@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class meteormove : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
- 
+    public Animator anim;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+       
+        anim = GetComponent<Animator>();
         speed = -1200f;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -27,14 +32,24 @@ public class meteormove : MonoBehaviour
 
         if (col.gameObject.tag == "Despawn")
         {
-            Destroy(this.gameObject);
+            end();
+       
         }
 
-        if(col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            Destroy(this.gameObject);
+            end();
+        }
+        if (col.gameObject.tag == "PlayerProjectile")
+        {
+            speed = 0;
+            anim.SetBool("ifCrash", true);
         }
     }
-}
+    void end()
+    {
+        
+        Destroy(this.gameObject);
+    }
 
-   
+}
