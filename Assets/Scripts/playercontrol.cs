@@ -7,6 +7,7 @@ public class playercontrol : MonoBehaviour
     public GameObject PlayerProjectile;
     public float speed;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private float health;
     private bool hasShield;
     private float ammo;
@@ -14,6 +15,8 @@ public class playercontrol : MonoBehaviour
     public float invincibletimer;
     public int hit;
 >>>>>>> a65085bbdc5f22ac9551dd335ae1847866af4b1b
+=======
+>>>>>>> parent of 4b25ee4... Stuff
     Rigidbody2D rb;
     AudioSource audioData;
     public Animator anim;
@@ -25,12 +28,15 @@ public class playercontrol : MonoBehaviour
     void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         ammo = 15;
         hasShield = false;
         health = 3;
 =======
         hit = 0;
 >>>>>>> a65085bbdc5f22ac9551dd335ae1847866af4b1b
+=======
+>>>>>>> parent of 4b25ee4... Stuff
         rb = GetComponent<Rigidbody2D>();
         audioData = GetComponent<AudioSource>();
         speed = 30f;
@@ -53,6 +59,7 @@ public class playercontrol : MonoBehaviour
         float move = Input.GetAxis("Vertical");
 <<<<<<< HEAD
         rb.velocity = new Vector2(rb.velocity.x, speed * move);
+<<<<<<< HEAD
         //End game if health is zero
         if (health == 0)
         {
@@ -97,38 +104,27 @@ public class playercontrol : MonoBehaviour
             shoot();
         }
 >>>>>>> a65085bbdc5f22ac9551dd335ae1847866af4b1b
+=======
+>>>>>>> parent of 4b25ee4... Stuff
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         //Play hit sound and move back if hit by meteor or projectile
+=======
+        //Play hit sound and move back
+>>>>>>> parent of 4b25ee4... Stuff
         if (col.gameObject.tag == "Meteor")
         {
-            if (hasShield == false)
-            {
-                transform.Translate(0, 2, 0);
-                audioData.Play(0);
-                health = health - 1;
-                //play hit animation
-                //Update heart display
-            }
-            else
-            {
-                hasShield = false;
-                //stop shield animation
-            }
+            transform.Translate(0, 2, 0);
+            audioData.Play(0);
         }
-
-        // Give a shield if shield is picked up
-        if (col.gameObject.tag == "shield")
+        //End game after 4 hits
+        if (col.gameObject.tag == "Death")
         {
-            hasShield = true;
-            //Play shield animation
-        }
-        //Gain health if health is picked up (max 3)
-        if (col.gameObject.tag == "health")
-        {
+<<<<<<< HEAD
             if (health < 3)
             {
                 health = health + 1;
@@ -170,6 +166,11 @@ public class playercontrol : MonoBehaviour
         if (hit == 1)
         {
             Destroy(health1);
+=======
+            Time.timeScale = 0;
+            Destroy(this.gameObject);
+            
+>>>>>>> parent of 4b25ee4... Stuff
         }
         if (hit == 2)
         {
@@ -194,6 +195,4 @@ public class playercontrol : MonoBehaviour
        
 
     }
-
-    
 }
