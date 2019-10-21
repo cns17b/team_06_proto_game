@@ -1,27 +1,12 @@
 fileFormatVersion: 2
-guid: b08ac42418c2df7498936e7f329fa375
+guid: ddb4776589f0448ad92659c9b492aba1
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 1253966051479560757
-    second: AlienCow_Shooting_Sprite(Condensed)_0
-  - first:
-      213: -7292052181433843765
-    second: AlienCow_Shooting_Sprite(Condensed)_1
-  - first:
-      213: -2236567089464140005
-    second: AlienCow_Shooting_Sprite(Condensed)_2
-  - first:
-      213: -8301199237891121041
-    second: AlienCow_Shooting_Sprite(Condensed)_3
-  - first:
-      213: -1501099592297809720
-    second: AlienCow_Shooting_Sprite(Condensed)_4
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -49,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: -1
+    wrapV: -1
     wrapW: -1
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -85,6 +70,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -272,6 +258,15 @@ TextureImporter:
 =======
     spriteID: 72d837a11d71ae44a9363cb9a51b4e8e
 >>>>>>> a65085bbdc5f22ac9551dd335ae1847866af4b1b
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+>>>>>>> parent of 4b25ee4... Stuff
     internalID: 0
     vertices: []
     indices: 
